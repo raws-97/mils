@@ -3,15 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="assets/img/favicon.png" rel="icon">
+    <title>The Millennials Institute</title>
+
+    <style>
+        body{
+            background-color: #FBF3D5;
+        }
+
+        .image_container {
+            text-align: center;
+            line-height: 300px;
+        }
+
+        .image_container img {
+            vertical-align: middle;
+        }
+
+        /* HTML: <div class="loader"></div> */
+        .loader {
+            color: #ac812d;
+            width: 4px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+            transform: translateX(-38px);
+            animation: l21 .5s infinite alternate linear;
+        }
+
+        @keyframes l21 {
+            50%  {box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px}
+            100% {box-shadow: 19px 0 0 0  , 38px 0 0 3px, 57px 0 0 7px}
+        }
+    </style>
 </head>
 <body>
-    <h2>Hello World</h2>
+    <div class="image_container">
+        <image src="assets/img/logo.png" height="50%" width="50%" alt="The Millennials Institute"/>
+   </div>
+   <center><p>Redirecting...</p></center>
+   <center><div class="loader"></div></center>
+
+
+   <script>
+    setTimeout(() => {
+        window.location.href = "https://millennialsinstitute.com/";
+    }, 3000);
+   </script>
+
 </body>
-
-<script>
-    let href = window.location.href
-
-    alert(href)
-</script>
 </html>
